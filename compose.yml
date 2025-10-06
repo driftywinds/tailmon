@@ -1,0 +1,17 @@
+ version: '3.8'
+
+ services:
+   tailscale-monitor:
+#     build: .
+     image: ghcr.io/driftywinds/tailmon
+     container_name: tailscale-monitor
+     restart: unless-stopped
+     env_file:
+       - .env
+     volumes:
+       - ./data:/data
+     environment:
+       - TZ=UTC
+     dns:
+       - 8.8.8.8
+       - 8.8.4.4
