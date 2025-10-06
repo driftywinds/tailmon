@@ -12,7 +12,7 @@ Also available on Docker Hub - [```driftywinds/tailmon:latest```](https://hub.do
 
 ### How to use: - 
 
-1. Download the ```compose.yml``` and ```.env``` files from the repo [here](https://github.com/driftywinds/rssrise).
+1. Download the ```compose.yml``` and ```.env``` files from the repo [here](https://github.com/driftywinds/tailmon).
 2. Go to [https://login.tailscale.com/admin/settings/keys](https://login.tailscale.com/admin/settings/keys) and generate a API token for your account.
 3. Customise the ```.env``` file according to your needs, fill the API token and mesh name.
 4. Run ```docker compose up -d```.
